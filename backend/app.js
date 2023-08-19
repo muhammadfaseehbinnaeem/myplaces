@@ -54,7 +54,7 @@ mongoose
     `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.oikrgxy.mongodb.net/${process.env.DB_NAME}`
   )
   .then(() => {
-    app.listen(5000, () => console.log("Server has started."));
+    app.listen(5000, () => console.log("Server running on port 5000..."));
   })
   .catch((err) => {
     console.log(err);
